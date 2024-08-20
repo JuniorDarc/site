@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Grey+Qo&family=Matemasie&family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root{
+   
+    --linear-gradient: 90deg ,#ca1313, #c46d15, #42d112;
+
+}
+*{
+    font-family: "Matemasie", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--linear-gradient));
+    color: #fff;
+}
+
+#calculator{
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculator h2{
+    font-size: 30px;
+    position: relative;
+}
+
+#calculate h2::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 150px;
+    background: linear-gradient(var(--linear-gradient));
+    bottom: 5px;
+}
+
+#input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-field{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+
+.input-field label{
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #958d1d;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#result{
+    text-align: center;
+}
+
+#total{
+    font-size: 40px;
+}
+
+#calculate{
+    background: linear-gradient(var(--linear-gradient));
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
